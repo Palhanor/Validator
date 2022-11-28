@@ -1,38 +1,98 @@
-.App {
+.form_login {
+  width: 40vw;
+  margin: 10vh auto;
+  background-color: #24232a;
+  color: rgb(221, 215, 215);
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px #00000039;
+}
+
+.form_login-enfeite {
+  background-color: rgb(161, 31, 31);
+  height: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.container_form_login {
+  padding: 1rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_login {
+  margin: .5rem 0 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container_login {
   display: flex;
   flex-direction: column;
+  margin: 0 0 1rem;
+  position: relative;
+}
+
+.label_login {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+}
+
+.input_login {
+  padding: 0.8rem;
+  background-color: #ffffff32;
+  border: none;
+  border-radius: 5px;
+  color: rgb(221, 215, 215);
+  outline: none;
+  font-size: 1rem;
+}
+
+.visualizar_senha {
+  position: absolute;
+  right: 20px;
+  top: 47px;
+  cursor: pointer;
+}
+
+.senha_requisitos {
+  margin-top: .8rem;
+}
+
+.senha_requisito {
+  margin: 0 0 .2rem;
+  font-size: .7rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.senha_requisito svg {
+  margin-right: .2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.botao_login {
+  font-size: 1rem;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(161, 31, 31);
+  transition: 0.2s;
+}
+
+.botao_login:hover {
+  background-color: rgb(127, 22, 22);
+}
+
+.botao_login:disabled {
+  background-color: rgb(82, 82, 87);
+  color: #9a99a4;
+}
+
+.vermelho {
+  color: rgb(200, 33, 33);
+}
+
+.verde {
+  color: rgb(19, 153, 133);
 }
