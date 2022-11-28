@@ -1,5 +1,5 @@
 .form_login {
-  width: 80vw;
+  width: 90vw;
   background-color: #24232a;
   color: rgb(221, 215, 215);
   border-radius: 10px;
@@ -16,6 +16,7 @@
   padding: 1rem 2rem 2rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .titulo_login {
@@ -28,6 +29,7 @@
   flex-direction: column;
   margin: 0 0 1rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .label_login {
@@ -35,21 +37,38 @@
   font-size: 1.1rem;
 }
 
+.input_email {
+  border-radius: 5px;
+}
+
+.input_senha {
+  border-radius: 5px 0 0 5px;
+}
+
 .input_login {
   padding: 0.8rem;
   background-color: #ffffff32;
   border: none;
-  border-radius: 5px;
   color: rgb(221, 215, 215);
   outline: none;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container_input {
+  display: flex;
 }
 
 .visualizar_senha {
-  position: absolute;
-  right: 20px;
-  top: 47px;
   cursor: pointer;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff32;
+  border-radius: 0 5px 5px 0;
+  
 }
 
 .senha_requisitos {
@@ -99,6 +118,9 @@
 @media screen and (min-width: 992px) {
   .form_login {
     width: 40vw;
+  }
+  .visualizar_senha {
+    top: 47px;
   }
 }
 

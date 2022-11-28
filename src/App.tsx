@@ -45,8 +45,8 @@ function App() {
   };
 
   const handleVisualizador = () => {
-    setViewPassword((view) => !view)
-  }
+    setViewPassword((view) => !view);
+  };
 
   return (
     <form className="form_login" onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ function App() {
             type="email"
             name="email"
             placeholder="adalovalace@gmail.com"
-            className="input_login"
+            className="input_login input_email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -71,20 +71,23 @@ function App() {
           <label htmlFor="password" className="label_login">
             Senha
           </label>
-          <input
-            type={!viewPassowrd ? "password" : "text"}
-            name="password"
-            placeholder="*************"
-            className="input_login"
-            value={password}
-            onChange={handleInput}
-            required
-          />
-          <div
-            className="visualizar_senha"
-            onClick={handleVisualizador}
-          >
-            {viewPassowrd ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
+          <div className="container_input">
+            <input
+              type={!viewPassowrd ? "password" : "text"}
+              name="password"
+              placeholder="*************"
+              className="input_login input_senha"
+              value={password}
+              onChange={handleInput}
+              required
+            />
+            <div className="visualizar_senha" onClick={handleVisualizador}>
+              {viewPassowrd ? (
+                <AiFillEyeInvisible size={20} />
+              ) : (
+                <AiFillEye size={20} />
+              )}
+            </div>
           </div>
           <div className="senha_requisitos">
             <p
