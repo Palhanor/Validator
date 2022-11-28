@@ -1,6 +1,5 @@
 .form_login {
-  width: 40vw;
-  margin: 10vh auto;
+  width: 80vw;
   background-color: #24232a;
   color: rgb(221, 215, 215);
   border-radius: 10px;
@@ -95,4 +94,16 @@
 
 .verde {
   color: rgb(19, 153, 133);
+}
+
+@media screen and (min-width: 992px) {
+  .form_login {
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form_login {
+    width: 30vw;
+  }
 }
